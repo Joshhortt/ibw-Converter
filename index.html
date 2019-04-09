@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>IBW - Calculator!</title>
+  </head>
+  <body>
+    <div id=outer>
+     <b>Ideal Body Weight Calculator</b>
+     <div id=cover>
+        <form name=iw>
+           <table class=main>
+              <col class=w60>
+              <col  class=w40>
+              <tr>
+                 <td>Measuring System
+                 <td>
+                    <select id=msw onchange=msystem();>
+                       <option value=metric>Metric (Kgs, Cms)
+                       <option value=us>US (lbs, inches)
+                    </select>
+              <tr>
+                 <td>Sex
+                 <td>
+                    <select id=sw>
+                       <option value=m>Male
+                       <option value=f>Female
+                    </select>
+              <tr>
+                 <td>Height <span id=thw>(Cms)</span>
+                 <td><input id=hw>
+              <tr>
+                 <td><button type=reset>Reset</button>
+                 <td><button type=button onclick='bweight();'>Submit</button>
+              <tr>
+                 <td>As per Universal Formula
+                 <td><input id=ibw class=op>
+              <tr>
+                 <td>As per World Health Organization recommendations
+                 <td><input id=ibw1 class=op>
+              <tr>
+                 <td colspan=2 class=ac >This Calculator is suitable only for Adults over 18 years of age.
+           </table>
+        </form>
+     </div>
+  </div>
+  </body>
+</html>
